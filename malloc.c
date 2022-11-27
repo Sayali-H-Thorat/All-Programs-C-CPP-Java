@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+struct Demo
+{
+	int i;
+	float f;	
+};
+
+int main()
+{
+	struct Demo obj;   //static menory allocation
+	
+	struct Demo *ptr = NULL;
+	
+	ptr = (struct Demo*)malloc(sizeof(struct Demo)* 3);
+	
+	obj.i = 11;
+	obj.f = 9.0;
+	
+	ptr -> i=11;
+	ptr -> f=9.0;
+	
+	free(ptr);
+	
+	return 0;
+}
