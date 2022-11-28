@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>This for form Creation and Learning!!!</h2>
+    <form action="backend.php">
+        <label for="MyFirstName">First Name:</label>
+        <!-- div tag is for breaking the line here we can use br also bt using div is better -->
+        <div>
+            <!-- type text is for entering data in text format -->
+            <input type="text" name="MyFirstName">
+        </div>
+        <br>
+        <label for="MyMiddleName">Middle Name:</label>
+        <div>
+             <input type="text" name="MyMiddleName">
+        </div>
+        <br>
+        <label for="MyLastName">Last Name:</label>
+        <div>
+             <input type="text" name="MyLastName">
+        </div>
+        <br>
+        <label for="MyRollNo">Roll No:</label>
+        <div>
+            <!-- type = number is for taking number as input -->
+             <input type="number" name="MyRollNo">
+        </div>
+        <br>
+        <label for="Email">Email:</label>
+        <div>
+            <!-- type = email is for taking input as email -->
+             <input type="email" name="Email">
+        </div>
+        <br>
+        <label for="MyDOB">Date of Birth:</label>
+        <div>
+            <!-- here we use date type for taking DOB -->
+             <input type="date" name="MyDOB">
+        </div>
+        <br>
+        <label for="MyBonus">Bonus:</label>
+        <div>
+            <!-- type = number is for taking number as input -->
+             <input type="number" name="MyBonus">
+        </div>
+        <br>
+        <label for="MyEligibility">Are you eligible?:</label>
+        <div>
+            <!-- type= checkbox is for yes or no option -->
+           Yes/No: <input type="checkbox" name="MyEligibility">
+           <!-- No: <input type="checkbox" name="MyEligibility"> -->
+        </div>
+        <br>
+        <label for="MyGender">Gender:</label>
+        <div>
+            <!-- radio type is for selecting one option out of three or 4 here we take name common due to this we have only one choice-->
+            <!-- If we change the names for all options then we can select multiple options here -->
+            Male<input type="radio" name="MyGender"><br>
+            Female<input type="radio" name="MyGender"><br>
+            Other<input type="radio" name="MyGender"><br>
+        </div>
+        <br>
+        <label for="MyText">Write about yourself:</label>
+        <div>
+            <!-- textarea is for writing paragraph -->
+            <br><textarea name="MyText" id="" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <!--  -->
+            <label for="MyCar">Car</label>
+            <!-- select is for selecting the option out of multiple -->
+            <select name="Car" id="MyCar">
+                <!-- option is for multiple options -->
+                <option value="rangeRover">RangeRover</option>
+                <option value="fortuner">Fortuner</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="bmw">BMW</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <!-- submit for submitting the form -->
+            <input type="submit" value="Submit your form here!!!">
+            <!-- reset is for resetting the filled info -->
+            <input type="reset" value="Click here to Reset your form!">
+        </div>
+
+
+    </form>
+
+</body>
+
+</html>
